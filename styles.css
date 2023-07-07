@@ -641,7 +641,8 @@
     margin-bottom: 20px;
     color: #ffffff;
     margin-top: 30px;
-    font-family: 'Gotham2' Arial, Helvetica, sans-serif ;
+    font-family: 'Gotham2' Arial, Helvetica, sans-serif ; 
+    z-index: 10;
   }
 
 
