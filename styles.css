@@ -189,7 +189,7 @@
     font-size: 40px;
   }
   
-  .hero p {
+  .test{
     font-size: 18px;
     margin-bottom: 40px;
     margin-top: 50px;
@@ -638,7 +638,7 @@
   .test {
     font-size: 18px;
     margin-bottom: 40px;
-    color: #d6d6d6;
+    color: #ffb71c;
     margin-top: 50px;
     font-family: 'Gotham2' Arial, Helvetica, sans-serif ;
   }
