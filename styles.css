@@ -632,14 +632,15 @@
   .hero h1 {
     font-family: 'Montserrat';
     letter-spacing: 10px;
-    font-size: 40px;
+    font-size: 30px;
   }
   
-  .hero p {
+  .hero h5 {
     font-size: 18px;
     margin-bottom: 40px;
+    color: #d6d6d6;
     margin-top: 50px;
-    font-family: Arial, Helvetica, sans-serif 'Gotham2';
+    font-family: 'Gotham2' Arial, Helvetica, sans-serif ;
   }
 
 
