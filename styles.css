@@ -430,6 +430,19 @@
   /* Add a media query for screens with a maximum width of 375px (iPhone 13 width) */
 @media (max-width: 700px) {
 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    /* Reset default margin and padding */
+    body, nav, ul, li {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gotham';
+    }
+
     /* Style the navbar */
     .navbar {
       background-color: black;
@@ -604,21 +617,33 @@
   }
 
   .hero h1 {
-    font-size: 28px;
-    letter-spacing: 5px;
+    font-family: 'Montserrat';
+    letter-spacing: 10px;
+    font-size: 33px;
   }
-
+  
   .hero p {
-    font-size: 16px;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 50px;
   }
 
+
+
+  
   .cta-button {
-    padding: 10px 20px;
-    font-size: 14px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 20px;
   }
 
+ 
   /* Boxes Section */
   #boxes {
     padding: 0px 0;
