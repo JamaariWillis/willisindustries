@@ -630,10 +630,10 @@
     font-size: 30px;
   }
   
-  .hero p {
+  .hero .hero-content p {
     font-size: 18px;
     display: block !important;
-    color: #fff !important;
+    color: #ff9a16 !important;
     top: 0;
   }
 
