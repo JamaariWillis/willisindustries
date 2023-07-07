@@ -168,9 +168,6 @@
   /* Hero Section */
   .hero {
     background-color: black;
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: -100px;
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -180,8 +177,8 @@
   }
   
   .hero-content {
-    max-width: 800px;
-    margin: 0px auto;
+    max-width: 100%;
+    margin: auto;
     position: relative;
 
   }
@@ -613,18 +610,29 @@
 
   /* Hero Section */
   .hero {
-    padding: 200px 0px;
-  }
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 0;
 
+  }
+  
+  .hero-content {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+
+  }
+  
   .hero h1 {
     font-family: 'Montserrat';
     letter-spacing: 10px;
-    font-size: 33px;
+    font-size: 40px;
   }
   
   .hero p {
     font-size: 18px;
-    color: #fff;
   }
 
 
