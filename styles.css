@@ -425,7 +425,7 @@
   /**/
   
   /* Add a media query for screens with a maximum width of 375px (iPhone 13 width) */
-@media (max-width: 700px) {
+@media (max-width: 375px) {
 
   * {
     margin: 0;
@@ -632,14 +632,14 @@
   .hero h1 {
     font-family: 'Montserrat';
     letter-spacing: 10px;
-    font-size: 30px;
+    font-size: 24px;
   }
   
   .test {
-    font-size: 18px;
-    margin-bottom: 40px;
-    color: #ffb71c;
-    margin-top: 50px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin-top: 30px;
     font-family: 'Gotham2' Arial, Helvetica, sans-serif ;
   }
 
@@ -648,15 +648,14 @@
   
   .cta-button {
     display: inline-block;
-    padding: 12px 24px;
-    padding-top: 25px;
+    padding: 10px 20px;
     background-color: #000000;
     border: 1px solid #fff;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    font-weight: bold;
-    margin-top: 20px;
+    font-size: 12px;
+
   }
   
   .cta-button:hover {
