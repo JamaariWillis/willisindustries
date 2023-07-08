@@ -40,7 +40,7 @@ body, nav, ul, li {
 }
 
 body {
-  background-color: transparent;
+  background-color: black;
 }
 
 
@@ -270,13 +270,14 @@ position: relative;
 .box-overlay {
 position: relative;
 width: 100%;
-height: 0;
+height: 100vh;
 padding-bottom: 75%;
 }
 
 .box-overlay img {
 width: 100%;
-height: 100%;
+height: 100vh;
+
 }
 
 .box-content {
@@ -284,7 +285,7 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100%;
-height: 100%;
+height: 100vh;
 display: flex;
 flex-direction: column; /* Add this line */
 align-items: flex-start; /* Updated alignment */
@@ -598,6 +599,10 @@ text-decoration: none;
 
 
 /* Hero Section */
+.hero {
+  padding: 250px 10px;
+  background-position-y: center;
+}
 
 .hero h1 {
   font-size: 28px;
@@ -606,7 +611,10 @@ text-decoration: none;
 
 .hero p {
   font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
+
 .cta-button {
   padding: 15px 20px;
   font-size: 14px;
@@ -614,7 +622,7 @@ text-decoration: none;
 
 /* Boxes Section */
 #boxes {
-  padding: 0px 0;
+  padding: 50px 0;
 }
 
 .box {
@@ -623,12 +631,9 @@ text-decoration: none;
 .box-content {
   padding: 0px;
   align-items: center;
- 
 }
 
-.box-overlay {
-  height: 100%;
-}
+
 
 .box-title {
   font-size: 18px;
@@ -640,12 +645,12 @@ text-decoration: none;
   padding-right: 20px;
   line-height: 40px;
   text-align: center;
-  z-index: 5;
 }
 
 .box-learn-more {
-  padding: 15px 20px;
+  padding: 10px 15px;
   font-size: 12px;
+  margin-left: 0;
   margin-top: 10px;
 
 }
