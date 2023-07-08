@@ -731,7 +731,8 @@ background-position: center;
   padding: 30px 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  text-align: c;
+  text-align: left;
+  height: 100vh;
 }
 
 }
