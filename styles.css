@@ -270,14 +270,15 @@ position: relative;
 .box-overlay {
 position: relative;
 width: 100%;
-height: 0;
-padding-bottom: 75%;
+height: 100%;
+padding-bottom: 0;
 }
 
 .box-overlay img {
 width: 100%;
 height: 100%;
 object-fit: cover;
+display: none;
 }
 
 .box-content {
@@ -315,7 +316,6 @@ line-height: 27px;
 
 .box-learn-more {
 display: inline-block;
-padding: 5px 10px;
 background-color: transparent;
 border: 1px solid #fff;
 color: #fff;
@@ -324,8 +324,6 @@ border-radius: 9px;
 padding: 20px 30px;
 
 font-family: 'Gotham';
-margin-left: 10px; /* Add this line for spacing */
-margin-top: 10px; /* Add this line for spacing */
 }
 
 .box-learn-more:hover {
