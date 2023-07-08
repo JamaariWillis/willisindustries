@@ -428,7 +428,7 @@ margin-bottom: 0;
 /**/
 
 /* Add a media query for screens with a maximum width of 375px (iPhone 13 width) */
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 
   /* Style the navbar */
   .navbar {
@@ -592,7 +592,45 @@ text-decoration: none;
 
 /* Rest of your existing navbar styles */
 
+/* Media Queries for Mobile */
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 32px;
+  }
 
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 15px;
+  }
+
+  .box-content {
+    padding-right: 10px;
+  }
+
+  .box-title {
+    font-size: 20px;
+    margin-left: 8px;
+  }
+
+  .box-description {
+    padding-right: 10px;
+    line-height: 22px;
+  }
+
+  .box-learn-more {
+    font-size: 12px;
+    margin-left: 8px;
+    margin-top: 8px;
+    padding: 8px 16px;
+  }
+}
 
 
 
