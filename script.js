@@ -41,9 +41,9 @@ window.addEventListener('scroll', function() {
   
     for (var i = 0; i < boxes.length; i++) {
       var box = boxes[i];
-      var boxOffsetTop = box.offsetTop;
+      var boxOffsetBottom = box.boxOffsetBottom;
       var boxHeight = box.offsetHeight;
-      var triggerPoint = boxOffsetTop + boxHeight * 1; // Adjust the percentage here
+      var triggerPoint = boxOffsetBottom + boxHeight * 1.3; // Adjust the percentage here
   
       var opacity = 1 - (scrollPosition - triggerPoint + windowHeight) / windowHeight;
   
