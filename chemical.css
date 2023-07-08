@@ -509,7 +509,7 @@
       right: 0;
       width: 100%;
       background-color: black;
-      z-index: 99; /* Ensure the menu appears on top of other content */
+      z-index: 4; /* Ensure the menu appears on top of other content */
       }
       
       /* Add styles to hide the menu by default */
@@ -542,7 +542,7 @@
       width: 100%;
       background-color: black;
       padding: 0px 0;
-      z-index: 2;
+      z-index: 5;
       }
       
       .navbar-link {
