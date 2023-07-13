@@ -264,8 +264,6 @@ align-items: flex-start; /* Updated alignment */
 justify-content: center; /* Updated alignment */
 gap: 20px;
 background-color: rgba(0, 0, 0, 0.5);
-opacity: 1;
-transition: opacity 0.3s ease;
 }
 
 
@@ -340,6 +338,7 @@ text-align: left;
 .letter-content p {
 margin-bottom: 20px;
 line-height: 30px;
+color: #000;
 }
 
 .letter-content p:last-child {
@@ -400,116 +399,8 @@ margin-bottom: 0;
 /* Add a media query for screens with a maximum width of 375px (iPhone 13 width) */
 @media (max-width: 700px) {
 
-  /* Style the navbar */
-  .navbar {
-    background-color: black;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    position: sticky;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    z-index: 3;
-
-  }
-
- /* Add this CSS rule for the hover effect on navbar links */
-.navbar-link {
-    position: relative;
-    text-decoration: none;
-    color: #F8F8F8;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-
-  .navbar-link:hover {
-    color: black;
-  }
-
-  .navbar-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: white;
-    opacity: 0;
-    transform: translate(-12.5%, -36%);
-    width: calc(100% + 20px);
-    height: calc(100% + 40px);
-    transition: opacity 0.3s ease;
-    z-index: -1;
-    pointer-events: none;
-  }
-
-  /* Add this CSS rule for the font color transition on hover */
-  .navbar-link:hover::before {
-    opacity: 1;
-    transform: translate(-12.5%, -36%) scale(1.05);
-  }
-
-  /* Modify the CSS rule for the scroll effect */
-  .navbar-scrolled {
-    background-color: rgb(255, 255, 255);
-    border-bottom: .5px solid rgb(241, 241, 241);
-  }
-
-  .navbar-scrolled .navbar-link::before {
-    background-color: black;
-  }
-
-  /* Add this CSS rule for the font color transition on hover when scrolled */
-  .navbar-scrolled .navbar-link:hover {
-    color: black;
-  }
 
 
-
-
-
-  /* Style the navbar logo */
-  .navbar-logo {
-    width: auto;
-  }
-
-  .navbar-logo a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Montserrat';
-    letter-spacing: 3px;
-  }
-
-  /* Style the navbar menu */
-  .navbar-menu {
-    list-style-type: none;
-  }
-
-  /* Style the navbar items */
-  .navbar-item {
-    display: inline-block;
-    margin-left: 20px;
-    font-family: 'Gotham2'
-  }
-
-
-
-/* Add additional styles for the navbar items */
-.navbar-item {
-display: block;
-margin: 10px 0;
-text-align: center; /* Align the menu items to the right */
-}
-
-.navbar-link {
-font-size: 14px;
-color: #FFF;
-text-decoration: none;
-}
-
-/* Rest of your existing navbar styles */
 
 
 
@@ -519,7 +410,7 @@ text-decoration: none;
 
 /* Hero Section */
 .hero {
-  padding: 250px 0px;
+  padding: 200px 0px;
 }
 
 .hero h1 {
@@ -540,7 +431,6 @@ text-decoration: none;
 
 
 .box-content {
-  padding: 0px;
   align-items: center;
 }
 
