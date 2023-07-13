@@ -51,29 +51,9 @@ window.addEventListener('scroll', function() {
     }
   });
 
-  window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
-    var menuContainer = document.querySelector('.navbar-menu-container');
-    var toggle = document.querySelector('.navbar-toggle-label');
-    var navbarLinks = document.querySelectorAll('.navbar-menu-container .navbar-link');
-    var scrollPosition = window.scrollY;
-  
-    if (scrollPosition > 555) {
-      navbar.classList.add('navbar-scrolled');
-      menuContainer.style.backgroundColor = '#FFF';
-      toggle.style.color = 'black';
-      navbarLinks.forEach(function(link) {
-        link.style.color = 'black';
-      });
-    } else {
-      navbar.classList.remove('navbar-scrolled');
-      menuContainer.style.backgroundColor = 'black';
-      toggle.style.color = '#FFF';
-      navbarLinks.forEach(function(link) {
-        link.style.color = '#FFF';
-      });
-    }
-  });
+
+
+    
   
   
   
