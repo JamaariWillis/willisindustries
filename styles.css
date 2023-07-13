@@ -5,6 +5,31 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Gotham';
+  src: url(font/GothamBook.ttf);
+}
+
+@font-face {
+  font-family: 'Gotham2';
+  src: url(font/GothamLight.ttf);
+
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url(font/Gotham-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(font/Montserrat-Bold.ttf);
+}
 
 
 
