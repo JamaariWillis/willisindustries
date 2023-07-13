@@ -38,6 +38,7 @@
 
 
 
+
 /*Styling for the Hero Section */
 
 /* Hero Section */
@@ -57,7 +58,6 @@
 
 .hero p {
   font-size: 18px;
-  color: orange;
 }
 
 
@@ -77,9 +77,29 @@
 .cta-button:hover {
   background-color: #fff;
   color: #000;
+  font-family: 'Gotham2'
 }
 
 
 
+/* About Section */
 
+
+
+
+.letter-content p {
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+.letter {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  height: 100%;
+}
 
