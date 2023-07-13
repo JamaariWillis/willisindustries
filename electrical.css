@@ -447,72 +447,7 @@
         font-family: 'Gotham2'
       }
       
-    /* Add styles to the hamburger icon and checkbox */
-    .navbar-toggle {
-    display: none;
-    }
-    
-    .navbar-toggle-label {
-    display: block;
-    color: #FFF;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    }
-    
-    /* Add styles to show the menu when the checkbox is checked */
-    .navbar-toggle:checked ~ .navbar-menu-container {
-    display: block;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    background-color: black;
-    z-index: 99; /* Ensure the menu appears on top of other content */
-    }
-    
-    /* Add styles to hide the menu by default */
-    .navbar-menu-container {
-    display: none;
-    }
-    
-    .navbar-menu {
-    list-style-type: none;
-    display: none; /* Hide the menu items by default */
-    }
-    
-    /* Add additional styles for the navbar items */
-    .navbar-item {
-    display: block;
-    margin: 10px 0;
-    text-align: center; /* Align the menu items to the right */
-    }
-    
-    /* Show the menu items when the hamburger menu is checked */
-    #navbar-toggle:checked ~ .navbar-menu-container .navbar-menu {
-    display: block;
-    }
-    
-    /* Adjust the positioning of the menu items */
-    .navbar-menu-container {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    background-color: black;
-    padding: 0px 0;
-    z-index: 2;
-    }
-    
-    .navbar-link {
-    font-size: 14px;
-    color: #FFF;
-    text-decoration: none;
-    }
-    
+
     /* Rest of your existing navbar styles */
     
     
@@ -524,7 +459,7 @@
     
     /* Boxes Section */
     #boxes {
-      padding: 50px 0;
+      padding: 0px 0;
     }
     
     
