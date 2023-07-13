@@ -229,6 +229,7 @@ color: #FFF;
 
 
 
+
 .mechanical {
   background-image: url(images/gas.jpg);
   background-size: cover;
@@ -302,8 +303,8 @@ transition: opacity 0.3s ease;
 .box-title {
 color: #fff;
 font-size: 24px;
-text-align: left; /* Updated alignment */
-margin-left: 10px; /* Add this line for spacing */
+text-align: center; /* Updated alignment */
+font-family: 'Gotham', Arial, Helvetica, sans-serif !important;
 }
 
 .box-description {
