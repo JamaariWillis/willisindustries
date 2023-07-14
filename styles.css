@@ -169,12 +169,14 @@ body {
 .hero h1 {
   letter-spacing: 10px;
   font-size: 40px;
+  font-family: 'Montserrat';
 }
 
 .hero p {
   font-size: 18px;
   margin-bottom: 40px;
   margin-top: 50px;
+  font-family: 'Montserrat';
 }
 
 
@@ -190,12 +192,12 @@ body {
   border-radius: 4px;
   font-weight: bold;
   margin-top: 20px;
+  font-family: 'Montserrat';
 }
 
 .cta-button:hover {
   background-color: #fff;
   color: #000;
-  font-family: 'Gotham2'
 }
 
 /*test*/
