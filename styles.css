@@ -62,9 +62,7 @@ body {
   text-decoration: none;
   color: #F8F8F8;
   font-size: 16px;
-  font-family: 'Montserrat';
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 .navbar-link:hover {
@@ -129,6 +127,7 @@ body {
 .navbar-item {
   display: inline-block;
   margin-left: 20px;
+  font-family: 'Gotham2';
   
 }
 
