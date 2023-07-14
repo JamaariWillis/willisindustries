@@ -264,7 +264,6 @@ color: #fff;
 z-index: 3;
 font-size: 24px;
 text-align: center; /* Updated alignment */
-font-family: 'Gotham', Arial, Helvetica, sans-serif !important;
 }
 
 .box-description {
@@ -283,8 +282,6 @@ color: #fff;
 text-decoration: none;
 border-radius: 9px;
 padding: 20px 30px;
-
-font-family: 'Gotham';
 margin-left: 10px; /* Add this line for spacing */
 margin-top: 10px; /* Add this line for spacing */
 }
