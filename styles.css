@@ -121,6 +121,11 @@
 
 
 
+/* Style the navbar items */
+.navbar-item {
+  display: inline-block;
+}
+
 
 
 
