@@ -32,9 +32,12 @@
 }
 /* navbar.css */
 
+/* Reset default margin and padding */
 
 
-
+body {
+  background-color: black;
+}
 
 
 /* Style the navbar */
@@ -124,6 +127,8 @@
 /* Style the navbar items */
 .navbar-item {
   display: inline-block;
+  margin-left: 20px;
+  
 }
 
 
@@ -162,7 +167,6 @@
 }
 
 .hero h1 {
-  font-family: 'Montserrat';
   letter-spacing: 10px;
   font-size: 40px;
 }
@@ -264,6 +268,7 @@ color: #fff;
 z-index: 3;
 font-size: 24px;
 text-align: center; /* Updated alignment */
+
 }
 
 .box-description {
