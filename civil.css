@@ -33,11 +33,7 @@
   /* navbar.css */
   
   /* Reset default margin and padding */
-  body, nav, ul, li {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gotham';
-  }
+ 
 
   body {
     background-color: black;
@@ -45,12 +41,14 @@
 
   
   /* Style the navbar */
+
   .navbar {
     background-color: black;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
     position: sticky;
     top: 0px;
     left: 0;
@@ -132,17 +130,12 @@
   /* Style the navbar items */
   .navbar-item {
     display: inline-block;
-    margin-left: 20px;
+
     font-family: 'Gotham2'
   }
 
 
   /*test*/
-  #boxes {
-    padding: 0px 0;
-    background-color: #000;
-}
-
 
 
 
@@ -218,81 +211,41 @@
 
 
 
-.box {
-  width: 100%;
-  margin: 0px 0px;
-  position: relative;
-  
-}
+
 
 
 
 .box-overlay {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding-bottom: 75%;
 }
 
-.box-overlay img {
-  width: 100%;
-  height: 100vh;
 
-}
 
 .box-content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column; /* Add this line */
   align-items: flex-start; /* Updated alignment */
   justify-content: center; /* Updated alignment */
   gap: 20px;
   background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  transition: opacity 0.3s ease;
 }
-
-/* for investors and partners section*/
-
-.box-content2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column; /* Add this line */
-    align-items: center; /* Updated alignment */
-    justify-content: center; /* Updated alignment */
-    gap: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-    transition: opacity 0.3s ease;
-  }
-
-  .box-description2 {
-    color: #fff;
-    font-family: 'Gotham2';
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    line-height: 27px;
-  }
-
-
-  /**/
 
 
 
 .box-title {
   color: #fff;
   font-size: 24px;
-  text-align: left; /* Updated alignment */
-  margin-left: 10px; /* Add this line for spacing */
+  text-align: center; /* Updated alignment */
+  margin-left: 50px; /* Add this line for spacing */
+  font-family: 'Montserrat';
 }
 
 .box-description {
@@ -300,33 +253,12 @@
   font-family: 'Gotham2';
   padding-right: 400px;
   line-height: 27px;
-}
-
-.box-learn-more {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 9px;
-  padding: 20px 30px;
-  
-  font-family: 'Gotham';
-  margin-left: 10px; /* Add this line for spacing */
-  margin-top: 10px; /* Add this line for spacing */
-}
-
-.box-learn-more:hover {
-  background-color: #fff;
-  transition: 0.5s;
-  color: #000;
+  margin-left: 50px;
 }
 
 
-.box:hover img {
-  transform: scale(1.1);
-}
+
+
 
 .darken {
   filter: brightness(10%)
@@ -390,132 +322,9 @@
     /* Add a media query for screens with a maximum width of 375px (iPhone 13 width) */
 @media (max-width: 700px) {
 
-  /* Style the navbar */
-  .navbar {
-    background-color: black;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    position: sticky;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    z-index: 3;
-
-  }
-
- /* Add this CSS rule for the hover effect on navbar links */
-.navbar-link {
-    position: relative;
-    text-decoration: none;
-    color: #F8F8F8;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-
-  .navbar-link:hover {
-    color: black;
-  }
-  
-  .navbar-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: white;
-    opacity: 0;
-    transform: translate(-12.5%, -36%);
-    width: calc(100% + 20px);
-    height: calc(100% + 40px);
-    transition: opacity 0.3s ease;
-    z-index: -1;
-    pointer-events: none;
-  }
-  
-  /* Add this CSS rule for the font color transition on hover */
-  .navbar-link:hover::before {
-    opacity: 1;
-    transform: translate(-12.5%, -36%) scale(1.05);
-  }
-  
-  /* Modify the CSS rule for the scroll effect */
-  .navbar-scrolled {
-    background-color: rgb(255, 255, 255);
-    border-bottom: .5px solid rgb(241, 241, 241);
-  }
-
-  .navbar-scrolled .navbar-link::before {
-    background-color: black;
-  }
-  
-  /* Add this CSS rule for the font color transition on hover when scrolled */
-  .navbar-scrolled .navbar-link:hover {
-    color: black;
-  }
-  
-
-
  
-  
-  /* Style the navbar logo */
-  .navbar-logo {
-    width: auto;
-  }
-
-  .navbar-logo a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Montserrat';
-    letter-spacing: 3px;
-  }
-  
-  /* Style the navbar menu */
-  .navbar-menu {
-    list-style-type: none;
-  }
-  
-  /* Style the navbar items */
-  .navbar-item {
-    display: inline-block;
-    margin-left: 20px;
-    font-family: 'Gotham2'
-  }
-  
-
-/* Add additional styles for the navbar items */
-.navbar-item {
-display: block;
-margin: 10px 0;
-text-align: right; /* Align the menu items to the right */
-}
-
-
-.navbar-link {
-font-size: 14px;
-color: #FFF;
-text-decoration: none;
-}
-
-/* Rest of your existing navbar styles */
-
-
-
-
-
-
-
-
-/* Boxes Section */
-#boxes {
-  padding: 0px 0;
-}
-
 
 .box-content {
-  padding: 0px;
   align-items: center;
 }
 
@@ -526,10 +335,13 @@ text-decoration: none;
   margin-left: 0;
 }
 
-.box-content2 {
-  padding: 0px;
-  align-items: center;
+.box-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100vh;
 }
+
 
 .box-description {
   font-size: 17px;
@@ -538,12 +350,6 @@ text-decoration: none;
   text-align: center;
 }
 
-.box-description2 {
-  font-size: 17px;
-  line-height: 40px;
-  text-align: center;
-  padding: 0;
-}
 
 .box-learn-more {
   padding: 10px 15px;
@@ -655,16 +461,4 @@ background-position: center;
   font-family: 'Gotham Bold';
 }
 
-/* About Section */
-#about {
-  padding: 50px 0;
-}
-
-.letter {
-  padding: 20px;
-}
-
-.letter-content p {
-  margin-bottom: 10px;
-}
 }
