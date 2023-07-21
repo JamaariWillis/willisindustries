@@ -226,41 +226,56 @@
   color: #000;
   }
 
-.mechanical {
-  background-image: url(images/gas.jpg);
-  background-size: cover;
-
-}
-
-.electric {
-  background-image: url(images/connect4.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.industrial {
-  background-image: url(images/indust.webp);
-  background-size: cover;
-  background-position: center;
-}
-
-.chemical {
-  background-image: url(images/chemistry.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-.civil {
-  background-image: url(images/civil.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.join {
-background-image: url(images/engine3.jpg);
-background-size: cover;
-background-position: center;
-}
+  .brown {
+    background-image: url(images/brownfield.jpg);
+    background-size: cover;
+  }
+  
+  .water {
+    background-image: url(images/water3.webp);
+    background-size: cover;
+  }
+  
+  .its {
+    background-image: url(images/its5.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .grid {
+    background-image: url(images/grid1.png);
+    background-size: cover;
+  }
+  
+  .connect {
+    background-image: url(images/connect1.jpg);
+    background-size: cover;
+  }
+  
+  .growth {
+    background-image: url(images/walk1.jpg);
+    background-size: cover;
+  }
+  
+  .green {
+    background-image: url(images/park.webp);
+    background-size: cover;
+  }
+  
+  .urban {
+    background-image: url(images/sustainable-construction.jpg);
+    background-size: cover;
+  }
+  
+  .climate {
+    background-image: url(images/climate.webp);
+    background-size: cover;
+  }
+  
+  .tech {
+    background-image: url(images/server.jpg);
+    background-size: cover;
+  }
 
 /* Footer Section */
 .footer {
@@ -293,41 +308,6 @@ background-position: center;
   text-decoration: none;
 }
 
-/* About Section */
-
-#about {
-  padding: 80px 0;
-  background-image: url(images/spaceagain.jpg);
-  text-align: center;
-  }
-
-  #about h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    }
-
-
-
-
-.letter-content p {
-  margin-bottom: 10px;
-  line-height: 25px;
-}
-
-.letter-content p:last-child {
-  margin-bottom: 0;
-  }
-
-.letter {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 30px 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: left;
-  height: 100%;
-}
 
 }
 
