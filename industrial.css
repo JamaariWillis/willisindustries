@@ -1,50 +1,50 @@
 /* Global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @font-face {
-    font-family: 'Gotham';
-    src: url(font/GothamBook.ttf);
-  }
-  
-  @font-face {
-    font-family: 'Gotham2';
-    src: url(font/GothamLight.ttf);
-  
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  @font-face {
-    font-family: 'Gotham Bold';
-    src: url(font/Gotham-Bold.otf);
-  }
-  
-  @font-face {
-    font-family: 'Montserrat';
-    src: url(font/Montserrat-Regular.ttf);
-  }
+@font-face {
+  font-family: 'Gotham';
+  src: url(font/GothamBook.ttf);
+}
 
-  @font-face {
-    font-family: 'Montserrat Bold';
-    src: url(font/Montserrat-Bold.ttf);
-  }
-  /* navbar.css */
-  
-  /* Reset default margin and padding */
-  body, nav, ul, li {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gotham';
-  }
+@font-face {
+  font-family: 'Gotham2';
+  src: url(font/GothamLight.ttf);
+
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url(font/Gotham-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(font/Montserrat-Bold.ttf);
+}
+/* navbar.css */
+
+/* Reset default margin and padding */
+
+
+
+/* Add a media query for screens with a maximum width of 700px (iPhone 13 width) */
+@media (max-width: 700px) {
 
   body {
-    background-color: black;
+    background-color: #000;
   }
 
-  
-  /* Style the navbar */
+  /*Nav Section */
+
   .navbar {
     background-color: black;
     height: 60px;
@@ -57,22 +57,21 @@
     left: 0;
     width: 100%;
     z-index: 3;
-
+  
   }
 
- /* Add this CSS rule for the hover effect on navbar links */
-.navbar-link {
+  .navbar-link {
     position: relative;
     text-decoration: none;
     color: #F8F8F8;
     font-size: 16px;
     font-weight: bold;
   }
-
+  
   .navbar-link:hover {
     color: black;
   }
-  
+
   .navbar-link::before {
     content: "";
     position: absolute;
@@ -87,236 +86,433 @@
     z-index: -1;
     pointer-events: none;
   }
-  
+
   /* Add this CSS rule for the font color transition on hover */
-  .navbar-link:hover::before {
-    opacity: 1;
-    transform: translate(-12.5%, -36%) scale(1.05);
-  }
+.navbar-link:hover::before {
+  opacity: 1;
+  transform: translate(-12.5%, -36%) scale(1.05);
+}
+
+/* Modify the CSS rule for the scroll effect */
+.navbar-scrolled {
+  background-color: rgb(255, 255, 255);
+  border-bottom: .5px solid rgb(241, 241, 241);
+}
+
+.navbar-scrolled .navbar-link::before {
+  background-color: black;
+}
+
+/* Add this CSS rule for the font color transition on hover when scrolled */
+.navbar-scrolled .navbar-link:hover {
+  color: black;
+}
+
+/* Style the navbar logo */
+.navbar-logo {
+  width: auto;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat';
+  letter-spacing: 3px;
+}
+
+/* Style the navbar items */
+.navbar-item {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Gotham2';
   
-  /* Modify the CSS rule for the scroll effect */
-  .navbar-scrolled {
-    background-color: rgb(255, 255, 255);
-    border-bottom: .5px solid rgb(241, 241, 241);
-  }
+}
 
-  .navbar-scrolled .navbar-link::before {
-    background-color: black;
-  }
-  
-  /* Add this CSS rule for the font color transition on hover when scrolled */
-  .navbar-scrolled .navbar-link:hover {
-    color: black;
-  }
-  
+/* Hero Section */
+.hero {
+  padding: 200px 0px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
 
+.hero h1 {
+  font-size: 28px;
+  letter-spacing: 5px;
+  font-family: 'Montserrat';
+}
 
- 
-  
-  /* Style the navbar logo */
-  .navbar-logo {
-    width: auto;
-  }
+.hero p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-family: 'Montserrat';
+}
 
-  .navbar-logo a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Montserrat';
-    letter-spacing: 3px;
-  }
-  
-  /* Style the navbar menu */
-  .navbar-menu {
-    list-style-type: none;
-  }
-  
-  /* Style the navbar items */
-  .navbar-item {
-    display: inline-block;
-    margin-left: 20px;
-    font-family: 'Gotham2'
-  }
+.cta-button {
+  display: inline-block;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Montserrat';
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-size: 14px;
+}
 
-  .navbar-toggle {
-    display: none;
-  }
-
-  .navbar-toggle-label {
-    display: none;
-  }
-
-  /*test*/
-  #boxes {
-    padding: 0px 0;
-    background-color: #000;
+.cta-button:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 
-
-
-
-.cobots {
-    background-image: url(images/cobots.jpg);
-    background-size: cover;
-}
-
-.agv {
-    background-image: url(images/agv.jpg);
-    background-size: cover;
-}
-
-.robotics {
-  background-image: url(images/robotics.jpg);
-  background-size: cover;
-}
-.robo {
-    background-image: url(images/robo.jpg);
-    background-size: cover;
-}
-
-.machine {
-    background-image: url(images/machine2.jpg);
-    background-size: cover;
-}
-
-.auto {
-    background-image: url(images/auto3.webp);
-    background-size: cover;
-}
-
-.optimize {
-    background-image: url(images/optimize.jpg);
-    background-size: cover;
-}
-
-.urban {
-    background-image: url(images/);
-    background-size: cover;
-}
-
-.climate {
-    background-image: url(images/);
-    background-size: cover;
-}
-
-.tech {
-    background-image: url(images/);
-    background-size: cover;
-}
-
-.partnerships {
-    background-color: #1d1d1d;
-    background-size: cover;
-}
-
-.industrial {
-    background-image: url(images/);
-    background-size: cover;
-}
-
-.investors {
-    background-color: #000; 
-    background-size: cover;
-}
-
-
-
-
-.box {
+.box-content {
+  position: absolute;
   width: 100%;
-  margin: 0px 0;
-  position: relative;
+  height: 100%;
+  flex-direction: column; /* Add this line */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Updated alignment */
+  background-color: rgba(0, 0, 0, 0.6);
+  gap: 20px;
+  
 }
-
-
 
 .box-overlay {
   position: relative;
   width: 100%;
-  height: 100vh;
-  padding-bottom: 75%;
-}
-
-.box-overlay img {
-  width: 100%;
-  height: 100vh;
-}
-
-.box-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column; /* Add this line */
-  align-items: flex-start; /* Updated alignment */
-  justify-content: center; /* Updated alignment */
-  gap: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-/* for investors and partners section*/
-
-.box-content2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column; /* Add this line */
-    align-items: center; /* Updated alignment */
-    justify-content: center; /* Updated alignment */
-    gap: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-    transition: opacity 0.3s ease;
+  height: 100%;
+  padding-bottom: 100vh;
   }
-
-  .box-description2 {
-    color: #fff;
-    font-family: 'Gotham2';
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    line-height: 27px;
-  }
-
-
-  /**/
-
-
 
 .box-title {
   color: #fff;
-  font-size: 24px;
-  text-align: left; /* Updated alignment */
-  margin-left: 10px; /* Add this line for spacing */
+  text-align: center;
+  font-size: 18px;
+  margin-left: 0;
+  font-family: 'Montserrat';
 }
 
 .box-description {
   color: #fff;
-  font-family: 'Gotham2';
-  padding-right: 400px;
-  line-height: 27px;
+  font-size: 14px;
+  padding-right: 2px;
+  padding-left: 2px;
+  line-height: 30px;
+  text-align: center;
+  font-family: 'Montserrat';
 }
 
 .box-learn-more {
   display: inline-block;
-  padding: 5px 10px;
   background-color: transparent;
   border: 1px solid #fff;
+  border-radius: 9px;
   color: #fff;
   text-decoration: none;
-  border-radius: 9px;
-  padding: 20px 30px;
+  padding: 10px 15px;
+  font-size: 12px;
+  margin-left: 0;
+  margin-top: 10px;
+
+}
+
+.box-learn-more:hover {
+  background-color: #fff;
+  transition: 0.5s;
+  color: #000;
+  }
+
+  .cobots {
+    background-image: url(images/cobots.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   
-  font-family: 'Gotham';
-  margin-left: 10px; /* Add this line for spacing */
-  margin-top: 10px; /* Add this line for spacing */
+  .agv {
+    background-image: url(images/agv.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .robotics {
+  background-image: url(images/robotics.jpg);
+  background-size: cover;
+  background-position: center;
+  }
+  .robo {
+    background-image: url(images/robo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .machine {
+    background-image: url(images/machine2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .auto {
+    background-image: url(images/auto3.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .optimize {
+    background-image: url(images/optimize.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .urban {
+    background-image: url(images/);
+    background-size: cover;
+  }
+  
+  .climate {
+    background-image: url(images/);
+    background-size: cover;
+  }
+  
+  .tech {
+    background-image: url(images/);
+    background-size: cover;
+  }
+  
+  .partnerships {
+    background-color: #1d1d1d;
+    background-size: cover;
+  }
+  
+  .industrial {
+    background-image: url(images/);
+    background-size: cover;
+  }
+  
+  .investors {
+    background-color: #000; 
+    background-size: cover;
+  }
+
+/* Footer Section */
+.footer {
+  padding: 10px 0;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.footer-links li {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.footer-info p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-links a {
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Gotham Bold';
+  text-decoration: none;
+}
+
+
+}
+
+@media (min-width: 700px) {
+
+  body {
+    background-color: #000;
+  }
+
+  /*Nav Section */
+
+  .navbar {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  
+  }
+
+  .navbar-link {
+    position: relative;
+    text-decoration: none;
+    color: #F8F8F8;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .navbar-link:hover {
+    color: black;
+  }
+
+  .navbar-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transform: translate(-12.5%, -36%);
+    width: calc(100% + 20px);
+    height: calc(100% + 40px);
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /* Add this CSS rule for the font color transition on hover */
+.navbar-link:hover::before {
+  opacity: 1;
+  transform: translate(-12.5%, -36%) scale(1.05);
+}
+
+/* Modify the CSS rule for the scroll effect */
+.navbar-scrolled {
+  background-color: rgb(255, 255, 255);
+  border-bottom: .5px solid rgb(241, 241, 241);
+}
+
+.navbar-scrolled .navbar-link::before {
+  background-color: black;
+}
+
+/* Add this CSS rule for the font color transition on hover when scrolled */
+.navbar-scrolled .navbar-link:hover {
+  color: black;
+}
+
+/* Style the navbar logo */
+.navbar-logo {
+  width: auto;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat';
+  letter-spacing: 3px;
+}
+
+/* Style the navbar items */
+.navbar-item {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Gotham2';
+  
+}
+
+/* Hero Section */
+.hero {
+  padding: 200px 0px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-family: 'Montserrat';
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-family: 'Montserrat';
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Montserrat';
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.box-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column; /* Add this line */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Updated alignment */
+  background-color: rgba(0, 0, 0, 0.6) ;
+  gap: 20px;
+}
+
+.box-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 90vh;
+  }
+
+.box-title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin-left: 0;
+  font-family: 'Montserrat';
+}
+
+.box-description {
+  color: #fff;
+  font-size: 17px;
+  padding-right: 100px;
+  padding-left: 100px;
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+.box-learn-more {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 9px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 12px;
+  margin-left: 0;
+  margin-top: 10px;
+
 }
 
 .box-learn-more:hover {
@@ -325,319 +521,105 @@
   color: #000;
 }
 
-
-.box:hover img {
-  transform: scale(1.1);
+.cobots {
+  background-image: url(images/cobots.jpg);
+  background-size: cover;
 }
 
-.darken {
-  filter: brightness(10%)
+.agv {
+  background-image: url(images/agv.jpg);
+  background-size: cover;
 }
 
-  /*test*/
+.robotics {
+background-image: url(images/robotics.jpg);
+background-size: cover;
+}
+.robo {
+  background-image: url(images/robo.jpg);
+  background-size: cover;
+}
 
- 
+.machine {
+  background-image: url(images/machine2.jpg);
+  background-size: cover;
+}
 
-    
-  
-  /* Footer Section Styling */
-  
-  .footer {
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer-links ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  
-  .footer-links li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .footer-links a {
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-  
-  .footer-info p {
-    margin-bottom: 10px;
-  }
-  
-  .footer-social {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-social li {
-    display: inline-block;
-    margin: 0 5px;
-  }
-  
-  .footer-social a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  /**/
+.auto {
+  background-image: url(images/auto3.webp);
+  background-size: cover;
+}
 
-         /* Add a media query for screens with a maximum width of 375px (iPhone 13 width) */
-         @media (max-width: 700px) {
+.optimize {
+  background-image: url(images/optimize.jpg);
+  background-size: cover;
+}
 
-          /* Style the navbar */
-          .navbar {
-            background-color: black;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            position: sticky;
-            top: 0px;
-            left: 0;
-            width: 100%;
-            z-index: 3;
-        
-          }
-        
-         /* Add this CSS rule for the hover effect on navbar links */
-        .navbar-link {
-            position: relative;
-            text-decoration: none;
-            color: #F8F8F8;
-            font-size: 16px;
-            font-weight: bold;
-            transition: color 0.3s ease;
-          }
-        
-          .navbar-link:hover {
-            color: black;
-          }
-          
-          .navbar-link::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: white;
-            opacity: 0;
-            transform: translate(-12.5%, -36%);
-            width: calc(100% + 20px);
-            height: calc(100% + 40px);
-            transition: opacity 0.3s ease;
-            z-index: -1;
-            pointer-events: none;
-          }
-          
-          /* Add this CSS rule for the font color transition on hover */
-          .navbar-link:hover::before {
-            opacity: 1;
-            transform: translate(-12.5%, -36%) scale(1.05);
-          }
-          
-          /* Modify the CSS rule for the scroll effect */
-          .navbar-scrolled {
-            background-color: rgb(255, 255, 255);
-            border-bottom: .5px solid rgb(241, 241, 241);
-          }
-        
-          .navbar-scrolled .navbar-link::before {
-            background-color: black;
-          }
-          
-          /* Add this CSS rule for the font color transition on hover when scrolled */
-          .navbar-scrolled .navbar-link:hover {
-            color: black;
-          }
-          
-        
-        
-         
-          
-          /* Style the navbar logo */
-          .navbar-logo {
-            width: auto;
-          }
-        
-          .navbar-logo a {
-            text-decoration: none;
-            color: white;
-            font-family: 'Montserrat';
-            letter-spacing: 3px;
-          }
-          
-          /* Style the navbar menu */
-          .navbar-menu {
-            list-style-type: none;
-          }
-          
-          /* Style the navbar items */
-          .navbar-item {
-            display: inline-block;
-            margin-left: 20px;
-            font-family: 'Gotham2'
-          }
-          
+.urban {
+  background-image: url(images/);
+  background-size: cover;
+}
 
-        
-        .navbar-link {
-        font-size: 14px;
-        color: #FFF;
-        text-decoration: none;
-        }
-        
-        /* Rest of your existing navbar styles */
-        
-        
-        
-        
-        
-        
-        
-        
-        /* Boxes Section */
-        #boxes {
-          padding: 0px 0;
-        }
-        
-        
-        .box-content {
-          padding: 0px;
-          align-items: center;
-        }
-        
-        
-        
-        .box-title {
-          font-size: 18px;
-          margin-left: 0;
-        }
-        
-        .box-content2 {
-          padding: 0px;
-          align-items: center;
-        }
-        
-        .box-description {
-          font-size: 17px;
-          padding-right: 20px;
-          line-height: 40px;
-          text-align: center;
-        }
-        
-        .box-description2 {
-          font-size: 17px;
-          line-height: 40px;
-          text-align: center;
-          padding: 0;
-        }
-        
-        .box-learn-more {
-          padding: 10px 15px;
-          font-size: 12px;
-          margin-left: 0;
-          margin-top: 10px;
-          
-        }
-        
-        .cobots {
-          background-image: url(images/cobots.jpg);
-          background-size: cover;
-          background-position: center;
-      }
-      
-      .agv {
-          background-image: url(images/agv.jpg);
-          background-size: cover;
-          background-position: center;
-      }
-      
-      .robotics {
-        background-image: url(images/robotics.jpg);
-        background-size: cover;
-        background-position: center;
-      }
-      .robo {
-          background-image: url(images/robo.jpg);
-          background-size: cover;
-          background-position: center;
-      }
-      
-      .machine {
-          background-image: url(images/machine2.jpg);
-          background-size: cover;
-          background-position: center;
-      }
-      
-      .auto {
-          background-image: url(images/auto3.webp);
-          background-size: cover;
-          background-position: center;
-      }
-      
-      .optimize {
-          background-image: url(images/optimize.jpg);
-          background-size: cover;
-          background-position: center;
-      }
-    
-      
-      .partnerships {
-          background-color: #1d1d1d;
-          background-size: cover;
-      }
-      
+.climate {
+  background-image: url(images/);
+  background-size: cover;
+}
 
-      
-      .investors {
-          background-color: #000; 
-          background-size: cover;
-      }
-      
-        
-        
-        
-        /* Footer Section */
-        .footer {
-          padding: 10px 0;
-        }
-        
-        .footer-links li {
-          margin: 0 5px;
-        }
-        
-        .footer-info p {
-          font-size: 12px;
-        }
-        
-        .footer-social a {
-          font-size: 16px;
-        }
-        
-        .footer-links a {
-          font-size: 12px;
-          color: #fff;
-          font-family: 'Gotham Bold';
-        }
-        
-        /* About Section */
-        #about {
-          padding: 50px 0;
-        }
-        
-        .letter {
-          padding: 20px;
-        }
-        
-        .letter-content p {
-          margin-bottom: 10px;
-        }
-        }
+.tech {
+  background-image: url(images/);
+  background-size: cover;
+}
+
+.partnerships {
+  background-color: #1d1d1d;
+  background-size: cover;
+}
+
+.industrial {
+  background-image: url(images/);
+  background-size: cover;
+}
+
+.investors {
+  background-color: #000; 
+  background-size: cover;
+}
+
+
+.investors {
+  background-color: #000; 
+  background-size: cover;
+}
+/* Footer Section */
+.footer {
+  padding: 10px 0;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.footer-links li {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.footer-info p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-links a {
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Gotham Bold';
+  text-decoration: none;
+}
+
+
+}
