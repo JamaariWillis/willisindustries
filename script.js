@@ -51,27 +51,3 @@ window.addEventListener('scroll', function() {
     }
   });
 
-
-
-    
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
