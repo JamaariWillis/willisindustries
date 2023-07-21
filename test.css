@@ -1,69 +1,49 @@
-
-.its {
-  background-image: url(images/its5.jpg);
+.electric {
+  background-image: url(images/ev4.avif);
   background-size: cover;
 }
 
-.grid {
-  background-image: url(images/grid1.png);
+.hyper {
+  background-image: url(images/hyper1.webp);
   background-size: cover;
 }
 
-.water {
-background-image: url(images/water3.webp);
-background-size: cover;
-}
-.connect {
-  background-image: url(images/connect1.jpg);
+.magnetic {
+  background-image: url(images/maglev.jpg);
   background-size: cover;
 }
 
-.growth {
-  background-image: url(images/walk1.jpg);
+.propulsion {
+  background-image: url(images/pro.jpg);
   background-size: cover;
 }
 
-.green {
-  background-image: url(images/park.webp);
+.energy {
+  background-image: url(images/energy1.webp);
   background-size: cover;
 }
 
-.brown {
-  background-image: url(images/brownfield.jpg);
+.autonomous {
+  background-image: url(images/auto2.jpg);
   background-size: cover;
 }
 
-.urban {
-  background-image: url(images/sustainable-construction.jpg);
+.saftey {
+  background-image: url(images/ai.jpg);
   background-size: cover;
 }
 
-.climate {
-  background-image: url(images/climate.webp);
+.sustainability {
+  background-image: url(images/wind.webp);
   background-size: cover;
 }
-
-.tech {
-  background-image: url(images/server.jpg);
-  background-size: cover;
-}
-
 .partnerships {
   background-color: #1d1d1d;
   background-size: cover;
 }
 
-.industrial {
-  background-image: url(images/grid7.webp);
-  background-size: cover;
-}
 
 .investors {
   background-color: #000; 
-  background-size: cover;
-}
-
-.solar {
-  background-image: url(images/solarpanels.avif);
   background-size: cover;
 }
